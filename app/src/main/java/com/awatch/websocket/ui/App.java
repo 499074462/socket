@@ -10,6 +10,10 @@ public class App extends Application {
 
     //消息分发器
 
+    private void test11() {
+        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        //int[] ints = twoSum(nums, 10);
+    }
 
     @Override
     public void onCreate() {
