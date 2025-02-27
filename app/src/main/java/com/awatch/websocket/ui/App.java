@@ -10,6 +10,9 @@ public class App extends Application {
 
     //消息分发器
 
+    private void test() {
+        //我是在main分支添加的
+    }
 
     @Override
     public void onCreate() {
