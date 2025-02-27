@@ -71,4 +71,35 @@ dependencies {
 
     implementation project(path: ':websocketlib')
     implementation 'com.alibaba:fastjson:1.2.33'
+
+
+
+    //Retrofit RxJava Adapter
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //微信
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+
+    // 此处以 3.1.7 版本为例，3.0.0 版本开始可以自动拉取 JCore 包，无需另外配置
+    // jverification 极光认证模块，用于实现快速登录和号码认证功能。提供一键登录功能，利用运营商提供的认证服务，
+    // 用户可以通过手机号快速登录，无需输入验证码。主要用于提高登录注册流程的效率，提升用户体验。
+    //使用这个sdk 会自动拉取JCore推送服务相关的依赖
+    //implementation 'cn.jiguang.sdk:jverification:3.3.1'
+
+    implementation 'cn.jiguang.sdk:jpush:5.5.3'
+
+    //主要用来辅助监听App的前后台切换
+    implementation "androidx.lifecycle:lifecycle-process:2.6.2" // 核心依赖
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2" // 推荐的扩展功能
+
+    implementation ('cn.jiguang.sdk:jverification:3.3.1'){
+        //exclude group: 'cn.jiguang.sdk', module: 'jcore'//会自动把 jcore 剔除
+    }
+
+    //腾讯开源的高性能keyValue存储，用来替代系统的SharedPreferences
+    //https://github.com/Tencent/MMKV
+    implementation 'com.tencent:mmkv-static:1.2.16'
 }
