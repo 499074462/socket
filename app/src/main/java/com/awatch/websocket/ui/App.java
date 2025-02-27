@@ -8,10 +8,13 @@ import com.zhangke.websocket.WebSocketSetting;
 
 public class App extends Application {
 
+    //消息分发器
+
+
     @Override
     public void onCreate() {
         super.onCreate();
-
+        //test();
         initWebSocket();
     }
 
