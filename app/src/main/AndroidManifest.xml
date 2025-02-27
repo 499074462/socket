@@ -18,6 +18,9 @@
         android:theme="@style/Theme.Watch"
         tools:targetApi="31">
         <activity
+            android:name=".ui.Momo"
+            android:exported="false" />
+        <activity
             android:name=".ui.order.OrderActivity"
             android:exported="false" />
         <activity
